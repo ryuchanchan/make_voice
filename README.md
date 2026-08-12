@@ -76,10 +76,76 @@ def play_voice(text):
         os.system('start ' + voice)
 
 
-play_voice("もう！ええでしょ")
+play_voice("こんにちわ")
 
 print("Voice generation completed!")
 ```
+
+## ⚙️ Configuration
+
+You can easily change the language and output file name at the top of the Python script.
+
+```python
+language = 'ja'
+voice_file = '04.mp3'
+```
+
+### Change the language
+
+Change `language` to the language code you want to use.
+
+For example:
+
+```python
+language = 'ja'  # Japanese
+```
+
+```python
+language = 'en'  # English
+```
+
+```python
+language = 'fr'  # French
+```
+
+### Change the output file name
+
+You can also change the generated MP3 file name:
+
+```python
+voice_file = 'hello.mp3'
+```
+
+For example:
+
+```python
+language = 'en'
+voice_file = 'hello.mp3'
+```
+
+Then:
+
+```python
+play_voice("Hello, everyone!")
+```
+
+will generate:
+
+```text
+hello.mp3
+```
+
+### 💡 Customize the Voice
+
+You can change these settings without modifying the `play_voice()` function.
+
+```python
+language = 'ja'
+voice_file = '04.mp3'
+```
+
+This makes it easy to reuse the program for different languages and projects.
+
 
 ## 🔄 How It Works
 
